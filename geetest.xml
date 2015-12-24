@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="captcha" method="upgrade">
+	<name>plg_captcha_geetest</name>
+	<version>1.0</version>
+	<creationDate>2015-12-23</creationDate>
+	<author>ZhangTianJie</author>
+	<authorEmail>807261773@qq.com</authorEmail>
+	<authorUrl>www.phpsj.com</authorUrl>
+	<copyright>Phpsj.com All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<description>PLG_CAPTCHA_GEETEST_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="geetest">geetest.php</filename>
+        <filename>class.geetestlib.php</filename>
+        <folder>language</folder>
+	</files>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+		<field
+			name="public_key"
+			type="text"
+			default="3386e03c620a4067f18fa92c370f1594"
+			label="PLG_GEETEST_PUBLIC_KEY_LABEL"
+			description="PLG_GEETEST_PUBLIC_KEY_DESC"
+			required="true"
+			filter="string"
+			size="50" />
+
+		<field
+			name="private_key"
+			type="text"
+			default="5fe89444b54d3a3b8e49594c42a770cf"
+			label="PLG_GEETEST_PRIVATE_KEY_LABEL"
+			description="PLG_GEETEST_PRIVATE_KEY_DESC"
+			required="true"
+			filter="string"
+			size="50" />
+		</fieldset>
+	</fields>
+	</config>
+</extension>
